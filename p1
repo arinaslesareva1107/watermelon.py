@@ -1,3 +1,53 @@
-def get_sum(a,b)->int :
-    return a+b
-print( get_sum(5,7))
+# 6.1
+s = "Hello World!"
+print(s)
+print (s[0])
+print (s[-1::])
+print (s[6:11])
+
+# 6.2
+a = input ("Введите сторку: ")
+if len(a)%2 ==0:
+    print (a.upper())
+else:
+    print (a.lower())
+
+# 6.3
+text = input("Введите строку: ")
+
+small = 0
+big = 0
+
+for char in text:
+    if char in "aeiou":
+        small = small + 1
+    if char in "AEIOU":
+        big = big + 1
+
+print("Маленьких гласных:", small)
+print("Больших гласных:", big)
+
+# 6.4
+o = input ("Введите сторку: ")
+if len (o)>0:
+    result = s[0]
+    for i in range (1, len (o)):
+        if o[i]!= o[i-1]:
+            result += o[i]
+print (result)
+
+# 6.5
+word1 = input("Введите первое слово: ")
+word2 = input("Введите второе слово: ")
+
+if len(word1) != len(word2):
+    print(False)
+else:
+    result = True
+    
+    for letter in word1:
+        if letter not in word2:
+            result = False
+            break
+    
+    print(result)
