@@ -1,3 +1,5 @@
+#какие-то изменения
+print = "p1"
 # 6.1
 s = "Hello World!"
 print(s)
